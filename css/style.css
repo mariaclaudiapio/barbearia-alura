@@ -1,0 +1,394 @@
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Cabeçalho */
+header {
+  background: rgba(230, 204, 143, 0.8);
+  padding: 20px 0;
+}
+
+.caixa {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav li {
+  display: inline;
+  margin: 0 0 0 2vw;
+}
+
+nav a {
+  text-transform: uppercase;
+  color: #000;
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #ab3e16;
+  text-decoration: underline;
+}
+
+/* estilização da página home */
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  background: linear-gradient(#fefefe, rgba(171, 62, 22, 0.6));
+}
+
+.conteudo-home {
+  display: block;
+}
+
+.container {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section.module p {
+  margin-bottom: 40px;
+}
+
+section.module:last-child {
+  margin-bottom: 0;
+}
+
+section.module.content {
+  padding: 40px 0;
+}
+
+section.module.parallax {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;  
+  position: relative;
+  overflow: hidden;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* essa é a propriedade responsável pelo efeito parallax*/
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-babackground-size: cover;
+}
+
+section.module.parallax-1 {
+  background-image: url("../img/banner.jpg");
+}
+
+section.module.parallax:after {
+  content: "";
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: 8;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0,
+    rgba(0, 0, 0, 0) 40%,
+    #111 100%
+  );
+}
+
+.titulo {
+  text-align: center;
+  font-size: 2em;
+  margin: 0 0 1em;
+  clear: left;
+}
+
+.module content {
+  padding: 3em 0;
+  width: 940px;
+  margin: 0 auto;
+}
+
+.container p {
+  margin: 0 0 1em;
+}
+
+.container strong {
+  font-weight: bold;
+}
+
+.container em {
+  font-style: italic;
+}
+
+.utensilios {
+  width: 120px;
+  float: left;
+  margin: 0 20px 20px 0;
+}
+
+.mapa {
+  padding: 1em 0;
+}
+
+.mapa-conteudo {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.mapa p {
+  margin: 0 0 2em;
+  text-align: center;
+}
+
+section.module.parallax-2 {
+  background-image: url("../img/barbearia.jpg");
+}
+
+.beneficios {
+  padding: 3em 0;
+}
+
+.conteudo-beneficios {
+  width: 640px;
+  margin: 0 auto;
+}
+
+.imagem-beneficios {
+  width: 59%;
+  box-shadow: 10px 10px 5px #000;
+}
+
+.imagem-beneficios:hover {
+  opacity: 0.6;
+  transition: 400ms;
+}
+
+.lista-beneficios {
+  width: 39%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.itens:before {
+  content: "★";
+}
+
+.itens {
+  line-height: 1.5;
+}
+
+.itens:first-child {
+  font-weight: bold;
+}
+
+.video {
+  width: 560px;
+  margin: 2em auto;
+}
+
+/* Estilização da página produtos */
+.produtos {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.produtos li {
+  display: inline-block;
+  text-align: center;
+  width: 30%;
+  vertical-align: top;
+  margin: 0 1.5%;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  border: 2px solid #333;
+  border-radius: 10px;
+}
+
+.produtos li:hover {
+  box-shadow: 10px 10px 5px #333;
+}
+
+.produtos li:active {
+  box-shadow: 10px 10px 5px #561510;
+}
+
+.produtos li:hover h2 {
+  font-size: 34px;
+}
+
+.produtos h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.produto-descricao {
+  font-size: 18px;
+}
+
+.produto-preco {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* estilização da página contato */
+.principal-contato {
+  width: 940px;
+  margin: 0 auto;
+}
+
+form {
+  margin: 40px 0;
+}
+
+form label,
+form legend {
+  display: block;
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+
+.input-padrao {
+  display: block;
+  border-radius: 5px;
+  margin: 0 0 20px;
+  padding: 10px 25px;
+  width: 50%;
+  box-shadow: 9px 9px 4px #888;
+}
+
+.checkbox {
+  margin: 20px 0;
+}
+
+fieldset {
+  margin: 4%;
+}
+
+.enviar {
+  width: 40%;
+  padding: 15px 0;
+  background: linear-gradient(to right, #efaa52, #ab3e16, #561510);
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  transition: 1s all;
+  cursor: pointer;
+}
+
+.enviar:hover {
+  transform: scale(1.2);
+}
+
+table {
+  margin: 20px 0 40px;
+}
+
+thead {
+  background-color: #ab3e16;
+  color: #fff;
+  font-weight: bold;
+}
+
+td,
+th {
+  border: 1px solid #000;
+  padding: 8px 15px;
+}
+
+/* rodapé */
+footer {
+  text-align: center;
+  background: url("../img/bg.jpg");
+  padding: 40px 0;
+}
+
+.copyright {
+  color: #fff;
+  font-size: 13px;
+  margin: 20px 0 0;
+}
+
+
+/* @media screen and (max-width: 480px) */
+@media (max-width: 800px) {
+  .caixa,
+  .container,
+  .conteudo-beneficios,
+  .mapa-conteudo,
+  .video,
+  legend ~ label {
+    width: auto;
+  }
+
+  .caixa {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav a {
+    font-size: 18px;
+  }
+
+  a {
+    margin: 3vw;
+  }
+
+  .lista-beneficios,
+  .imagem-beneficios {
+    width: 100%;
+  }
+
+  .imagem-beneficios {
+    margin-top: 2em;
+  }
+
+  form {
+    display: block;
+    width: 50%;
+    margin: 5vmax;
+  }
+
+  .container-contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  fieldset {
+    width: 70%;
+    margin: 3% 0;
+  }
+
+  .checkbox {
+    width: 82vw;
+  }
+
+  .container-checkbox {
+    box-sizing: border-box;
+  }
+
+  .enviar {
+    margin: 10%;
+  }
+
+  table {
+    margin: 5% 5% 5% 9%;
+  }
+  .produtos li {
+    display: block;
+    width: 30%;
+    margin: 5vmax;
+  }
+
+  .legend {
+    word-break: normal;
+  }
+}
