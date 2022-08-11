@@ -236,43 +236,44 @@ section.module.parallax-2 {
   margin-top: 10px;
 }
 
-/* estilização da página contato */
+/*estilização da página contato */
 .principal-contato {
-  width: 940px;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  margin: 1rem;
 }
 
 form {
-  margin: 40px 0;
+  display: flex;
+  flex-direction: column;  
 }
 
 form label,
 form legend {
   display: block;
   font-size: 20px;
-  margin: 0 0 10px;
+  margin-bottom: 10px;
 }
 
 .input-padrao {
-  display: block;
+  align-self: center;
   border-radius: 5px;
-  margin: 0 0 20px;
+  margin-bottom: 20px;
   padding: 10px 25px;
-  width: 50%;
+  width: 55vw;
   box-shadow: 9px 9px 4px #888;
 }
 
-.checkbox {
-  margin: 20px 0;
-}
-
 fieldset {
-  margin: 4%;
+  margin: 1rem;
 }
 
 .enviar {
-  width: 40%;
-  padding: 15px 0;
+  align-self: center;
+  width: 30vw;
+  padding: 1rem 0;
+  margin: 1rem;
   background: linear-gradient(to right, #efaa52, #ab3e16, #561510);
   color: #fff;
   font-weight: bold;
@@ -281,10 +282,6 @@ fieldset {
   border-radius: 5px;
   transition: 1s all;
   cursor: pointer;
-}
-
-.enviar:hover {
-  transform: scale(1.2);
 }
 
 table {
@@ -309,24 +306,6 @@ tbody tr:hover {
   background-color: rgba(230, 204, 143, 0.8);
 }
 
-/*
-table {
-  
-}
-
-thead {
-  background-color: #ab3e16;
-  color: #fff;
-  font-weight: bold;
-}
-
-td,
-th {
-  border: 1px solid #000;
-  padding: 8px 15px;
-}
-*/
-
 /* rodapé */
 footer {
   text-align: center;
@@ -339,7 +318,6 @@ footer {
   font-size: 13px;
   margin: 20px 0 0;
 }
-
 
 /* @media screen and (max-width: 480px) */
 @media (max-width: 800px) {
@@ -364,6 +342,16 @@ footer {
   a {
     margin: 3vw;
   }
+    
+  .produtos li {
+    display: block;
+    width: 30%;
+    margin: 5vmax;
+  }
+
+  .legend {
+    word-break: normal;
+  }
 
   .lista-beneficios,
   .imagem-beneficios {
@@ -374,45 +362,17 @@ footer {
     margin-top: 2em;
   }
 
-  form {
-    display: block;
-    width: 50%;
-    margin: 5vmax;
-  }
-
-  .container-contato {
+  .principal-contato {
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    text-align: justify;
   }
 
-  fieldset {
-    width: 70%;
-    margin: 3% 0;
-  }
-
-  .checkbox {
-    width: 82vw;
-  }
-
-  .container-checkbox {
-    box-sizing: border-box;
+  form > label {
+    text-align: center;
   }
 
   .enviar {
-    margin: 10%;
-  }
-
-  table {
-    margin: 5% 5% 5% 9%;
-  }
-  .produtos li {
-    display: block;
-    width: 30%;
-    margin: 5vmax;
-  }
-
-  .legend {
-    word-break: normal;
-  }
+    width: 50vw;
+  }  
 }
