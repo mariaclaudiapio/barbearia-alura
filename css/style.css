@@ -82,7 +82,7 @@ section.module.parallax {
 }
 
 section.module.parallax-1 {
-  background-image: url("../img/banner.jpg");
+  background-image: url("../img/barbearia1.jpg");
 }
 
 section.module.parallax:after {
@@ -271,7 +271,7 @@ fieldset {
 
 .enviar {
   align-self: center;
-  width: 30vw;
+  width: 20vw;
   padding: 1rem 0;
   margin: 1rem;
   background: linear-gradient(to right, #efaa52, #ab3e16, #561510);
@@ -282,6 +282,10 @@ fieldset {
   border-radius: 5px;
   transition: 1s all;
   cursor: pointer;
+}
+
+.enviar:hover {
+  transform: scale(1.2);
 }
 
 table {
