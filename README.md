@@ -5,7 +5,7 @@
 Releitura do site desenvolvido durante os cursos de **HTML5 e CSS3** da Alura. 
 
 <p align="center">
- <img width="600vw" src="barbearia_alura.gif">
+ <img width="80%" src="barbearia_alura.gif">
 </p>
 
 
